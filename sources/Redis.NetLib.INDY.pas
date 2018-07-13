@@ -55,7 +55,7 @@ type
 implementation
 
 uses
-  System.SysUtils, idGlobal, IdIOHandler;
+  SysUtils, idGlobal, IdIOHandler;
 
 { TRedisTCPLibINDY }
 

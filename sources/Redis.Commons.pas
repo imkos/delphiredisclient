@@ -29,7 +29,7 @@ unit Redis.Commons;
 interface
 
 uses
-  System.SysUtils, Redis.Values;
+  SysUtils, Redis.Values;
 
 var
   RedisDefaultSubscribeTimeout: UInt32 = 1000;

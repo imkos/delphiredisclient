@@ -27,7 +27,7 @@ unit Redis.NetLib.Factory;
 
 interface
 
-uses Redis.Client, System.Generics.Collections, System.SysUtils, Redis.Command,
+uses Redis.Client, Generics.Collections, SysUtils, Redis.Command,
   Redis.Commons;
 
 type

@@ -28,7 +28,7 @@ unit Redis.Command;
 interface
 
 uses
-  System.SysUtils, System.Generics.Collections, Redis.Commons;
+  SysUtils, Generics.Collections, Redis.Commons;
 
 type
   TRedisCommand = class(TRedisClientBase, IRedisCommand)

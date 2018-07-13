@@ -27,7 +27,7 @@ unit Redis.Client;
 interface
 
 uses
-  Generics.Collections, System.SysUtils, Redis.Command, Redis.Commons,
+  Generics.Collections, SysUtils, Redis.Command, Redis.Commons,
   Redis.Values;
 
 type
@@ -254,10 +254,10 @@ function NewRedisCommand(const RedisCommandString: string): IRedisCommand;
 implementation
 
 uses
-  System.Generics.Collections, Redis.NetLib.Factory, Redis.Utils;
+  Redis.NetLib.Factory, Redis.Utils;
 
 const
-  REDIS_GEO_UNIT_STRING: array [TRedisGeoUnit.Meters .. TRedisGeoUnit.Feet]
+  REDIS_GEO_UNIT_STRING: array [TRedisGeoUnit]
     of string = ('m', 'km', 'mi', 'ft');
 
 function NewRedisClient(const AHostName: string; const APort: Word;

@@ -28,7 +28,7 @@ unit Redis.Utils;
 interface
 
 uses
-  Redis.Values, System.SysUtils, Generics.Collections;
+  Redis.Values, SysUtils, Generics.Collections;
 
   function RedisArrayGetItems(const AArray: TRedisArray; const aIndex: UInt64): TRedisString;
   function RedisArrayToArray(const AArray: TRedisArray): TArray<string>;
@@ -42,7 +42,7 @@ uses
 implementation
 
 uses
-  System.SysConst, Redis.Commons;
+  SysConst, Redis.Commons;
 
 function RedisArrayGetItems(const AArray: TRedisArray; const aIndex: UInt64): TRedisString;
 begin
